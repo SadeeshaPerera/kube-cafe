@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>KubeCafe</title>
+</head>
+<body>
+  <h1>Welcome to KubeCafe ☕</h1>
+  <ul id="menu"></ul>
+
+  <script>
+    fetch('/api/menu')
+      .then(res => res.json())
+      .then(data => {
+        const menu = document.getElementById('menu');
+        data.forEach(item => {
+          const li = document.createElement('li');
+          li.textContent = `${item.name} - $${item.price}`;
+          menu.appendChild(li);
+        });
+      });
+  </script>
+</body>
+</html>
