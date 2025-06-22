@@ -79,3 +79,4 @@ Then access `http://<minikube-ip>/` in your browser.
 
 - `GET /api/menu` — List all menu items
 - `POST /api/menu` — Add a new menu item
+
