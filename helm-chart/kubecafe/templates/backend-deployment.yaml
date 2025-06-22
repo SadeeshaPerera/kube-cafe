@@ -28,3 +28,18 @@ spec:
   ports:
     - port: 3000
   type: ClusterIP
+
+
+livenessProbe:
+  httpGet:
+    path: /menu
+    port: 3000
+  initialDelaySeconds: 5
+  periodSeconds: 10
+
+readinessProbe:
+  httpGet:
+    path: /menu
+    port: 3000
+  initialDelaySeconds: 5
+  periodSeconds: 5
