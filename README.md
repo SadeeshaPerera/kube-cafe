@@ -12,10 +12,20 @@ k8s/        # Kubernetes manifests for deployment
 
 ## Features
 
-- **Backend**: REST API for menu items using Express and MongoDB ([backend/app.js](backend/app.js))
-- **Frontend**: Static HTML page displaying menu items ([frontend/index.html](frontend/index.html))
-- **Database**: MongoDB for storing menu items
-- **Kubernetes**: Deployments, Services, and Ingress for all components
+| Feature                              | Purpose                                                   |
+| ------------------------------------ | --------------------------------------------------------- |
+| **Backend**                         | REST API for menu items using Express and MongoDB ([backend/app.js](backend/app.js)) |
+| **Frontend**                        | Static HTML page displaying menu items ([frontend/index.html](frontend/index.html)) |
+| **Database**                        | MongoDB for storing menu items                            |
+| **Kubernetes**                      | Deployments, Services, and Ingress for all components      |
+| **Helm**                            | Package the application for easy deployment                |
+| **Secrets & ConfigMaps**             | Secure DB credentials & environment config                 |
+| **Horizontal Pod Autoscaling (HPA)** | Auto-scale backend based on CPU load                       |
+| **Liveness & Readiness Probes**      | Improve reliability and fault tolerance                    |
+| **Persistent Volume (MongoDB)**      | Store MongoDB data persistently                            |
+| **Ingress with TLS**                 | Secure traffic with HTTPS using a self-signed certificate  |
+| **Resource Limits/Requests**         | Optimize scheduling and cost control                       |
+| **GitHub Actions CI/CD**             | Automate build, push, deploy process                       |
 
 ## Getting Started
 
