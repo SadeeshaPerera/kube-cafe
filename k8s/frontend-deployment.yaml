@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: sadeesha/kubecafe-frontend:latest
+          image: sadeesha04/kubecafe-frontend:latest
           ports:
             - containerPort: 80
 ---

@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: sadeesha/kubecafe-backend:latest
+          image: sadeesha04/kubecafe-backend:latest
           ports:
             - containerPort: 3000
 ---
